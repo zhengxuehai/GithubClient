@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "GithubHttCongifuration.h"
+#import "OAuth2Manager.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +18,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    if(url.absoluteString.length > 0){
+        [OAuth2Manager handleRedirectURL:url];
+        return YES;
+    }
+    
+    return NO;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

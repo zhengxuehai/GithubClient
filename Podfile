@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'GitHubClient' do
 pod 'AFNetworking'
+pod 'SSKeychain'
 end
 
 target 'GitHubClientTests' do

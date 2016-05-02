@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "OAuth2Manager.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Action Handler
+
+- (IBAction)handleOpenSafari:(id)sender
+{
+    [OAuth2Manager openSafariToLogin];
 }
 
 @end
