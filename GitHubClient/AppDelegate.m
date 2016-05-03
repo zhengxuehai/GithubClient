@@ -7,16 +7,19 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import "AFHttpManager.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//    ViewController *vc1 = [[ViewController alloc] init];
+//    ViewController *vc2 = [[ViewController alloc] init];
+//    [vc1 addhaha];
+//    [vc2 addhaha];
     return YES;
 }
 
@@ -41,5 +44,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)option{
+    NSLog(@"url is %@",url);
+    [[AFHttpManager sharedInstance]fetchAccessTokenWithCodeURL:url];
+    return YES;
+}
+
+
+
 
 @end

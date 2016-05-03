@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230BF7581CD79316005AEA5D /* AFHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 230BF7571CD79316005AEA5D /* AFHttpClient.m */; };
+		23B304AC1CD8C0FC00C65796 /* AFHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B304AB1CD8C0FC00C65796 /* AFHttpManager.m */; };
+		23B304AF1CD8D05000C65796 /* AFHttpClient+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B304AE1CD8D05000C65796 /* AFHttpClient+test.m */; };
 		31B22259E37E7822F99FB3EE /* Pods_GitHubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5324FCC9FB9398E7F258D85C /* Pods_GitHubClient.framework */; };
 		40255ACD1CD5011400BC0F7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40255ACC1CD5011400BC0F7C /* main.m */; };
 		40255AD01CD5011400BC0F7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40255ACF1CD5011400BC0F7C /* AppDelegate.m */; };
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230BF7561CD79316005AEA5D /* AFHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHttpClient.h; sourceTree = "<group>"; };
+		230BF7571CD79316005AEA5D /* AFHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHttpClient.m; sourceTree = "<group>"; };
+		23B304AA1CD8C0FC00C65796 /* AFHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHttpManager.h; sourceTree = "<group>"; };
+		23B304AB1CD8C0FC00C65796 /* AFHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHttpManager.m; sourceTree = "<group>"; };
+		23B304AD1CD8D05000C65796 /* AFHttpClient+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHttpClient+test.h"; sourceTree = "<group>"; };
+		23B304AE1CD8D05000C65796 /* AFHttpClient+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHttpClient+test.m"; sourceTree = "<group>"; };
 		40255AC81CD5011400BC0F7C /* GitHubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40255ACC1CD5011400BC0F7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40255ACE1CD5011400BC0F7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +169,12 @@
 		40255AFE1CD5045D00BC0F7C /* HttpClient */ = {
 			isa = PBXGroup;
 			children = (
+				230BF7561CD79316005AEA5D /* AFHttpClient.h */,
+				230BF7571CD79316005AEA5D /* AFHttpClient.m */,
+				23B304AA1CD8C0FC00C65796 /* AFHttpManager.h */,
+				23B304AB1CD8C0FC00C65796 /* AFHttpManager.m */,
+				23B304AD1CD8D05000C65796 /* AFHttpClient+test.h */,
+				23B304AE1CD8D05000C65796 /* AFHttpClient+test.m */,
 			);
 			name = HttpClient;
 			sourceTree = "<group>";
@@ -354,8 +369,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				40255AD31CD5011400BC0F7C /* ViewController.m in Sources */,
+				23B304AF1CD8D05000C65796 /* AFHttpClient+test.m in Sources */,
 				40255AD01CD5011400BC0F7C /* AppDelegate.m in Sources */,
 				40255ACD1CD5011400BC0F7C /* main.m in Sources */,
+				230BF7581CD79316005AEA5D /* AFHttpClient.m in Sources */,
+				23B304AC1CD8C0FC00C65796 /* AFHttpManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
